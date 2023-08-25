@@ -1,0 +1,67 @@
+/* Base CSS  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif !important;
+}
+
+/* Header CSS  */
+.nav-search {
+  position: relative;
+}
+
+.nav-search button {
+  position: absolute;
+  top: 0;
+  right: 0px;
+  border: 0;
+  height: 45px;
+  width: 70px;
+  font-size: 22px;
+  color: #fff;
+  background: #ff5757;
+  border-radius: 0 5px 5px 0;
+}
+
+.nav-search input {
+  border: 0;
+  height: 45px;
+  width: 500px;
+  background: #e6ecf2;
+  padding: 20px;
+}
+
+.nav-search input:focus {
+  box-shadow: none !important;
+  background: #e6ecf2;
+}
+
+input::placeholder,
+textarea::placeholder {
+  opacity: 1;
+  color: #a3a3a3 !important;
+}
+
+.header-search {
+  width: 100%;
+}
+
+.nav-end i {
+  font-size: 22px;
+  color: #3d444e;
+}
+
+.nav-link span {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #3d444e;
+}
+
+.section-border-bottom {
+  border-bottom: 1px solid rgb(245, 245, 245) !important;
+}

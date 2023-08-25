@@ -1,7 +1,15 @@
+import { Col, Container, Row } from "react-bootstrap";
+
 const Home = () => {
     return (
-        <div>
-            <h3>This is Home Page Bro</h3>
+        <div className="mt-5">
+            <Container>
+                <Row>
+                    <Col md={12}>
+                        <h3>This is Home Page Bro</h3>
+                    </Col>
+                </Row>
+            </Container>
         </div>
     );
 };
