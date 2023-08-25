@@ -10,6 +10,10 @@ body {
 }
 
 /* Header CSS  */
+.header-wrap {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+}
+
 .nav-search {
   position: relative;
 }
@@ -64,4 +68,34 @@ textarea::placeholder {
 
 .section-border-bottom {
   border-bottom: 1px solid rgb(245, 245, 245) !important;
+}
+
+.header-nav {
+  padding: 0;
+}
+
+.header-nav li {
+  list-style: none;
+  float: left;
+  margin-right: 30px;
+}
+
+.header-nav li a {
+  text-decoration: none;
+  color: #3d444e;
+  display: flex;
+  align-items: center;
+  transition: .3s;
+  font-weight: 600;
+}
+
+.header-nav li a:hover {
+  transition: .3s;
+  color: #ff5757;
+}
+
+.header-nav li a i {
+  margin-right: 5px;
+  font-size: 22px;
+  font-weight: normal;
 }

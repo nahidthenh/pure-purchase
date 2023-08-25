@@ -1,4 +1,4 @@
-import { Container, Nav, NavLink, Navbar } from "react-bootstrap";
+import { Col, Container, Nav, NavLink, Navbar, Row } from "react-bootstrap";
 import logo from '/logo-2.png'
 import { Link } from "react-router-dom";
 
@@ -28,6 +28,25 @@ const Header = () => {
                         </Navbar.Collapse>
                     </Container>
                 </Navbar>
+            </div>
+            <div className="header-bottom py-3">
+                <Container>
+                    <Row>
+                        <Col md={12}>
+                            <ul className="header-nav">
+                                <li>
+                                    <Link to='/'><i className="ri-home-2-line"></i> Home</Link>
+                                </li>
+                                <li>
+                                    <Link to='/product'><i className="ri-shopping-bag-line"></i> Products</Link>
+                                </li>
+                                <li>
+                                    <Link to='/category'><i className="ri-file-list-line"></i> Category</Link>
+                                </li>
+                            </ul>
+                        </Col>
+                    </Row>
+                </Container>
             </div>
         </header>
     );
