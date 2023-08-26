@@ -1,5 +1,5 @@
 import { Col, Container, Nav, NavLink, Navbar, Row } from "react-bootstrap";
-import logo from '/logo-2.png'
+import logo from '/main-logo.png'
 import { Link } from "react-router-dom";
 
 const Header = () => {
@@ -9,7 +9,7 @@ const Header = () => {
                 <Navbar collapseOnSelect expand="lg">
                     <Container>
                         <Navbar.Brand className="me-5" href="/">
-                            <img width={100} src={logo} alt="" />
+                            <img width={50} src={logo} alt="" />
                         </Navbar.Brand>
                         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                         <Navbar.Collapse id="responsive-navbar-nav">
