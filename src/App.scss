@@ -167,7 +167,6 @@ textarea::placeholder {
     }
   }
 
-
   .footer-widget {
     p {
       line-height: 27px;
@@ -193,3 +192,44 @@ textarea::placeholder {
 }
 
 // ============== Footer CSS End ============== //
+
+// ============== Error CSS Start ============== //
+
+.error-wrap {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 70px;
+
+  h1 {
+    color: $PrimaryColor;
+    font-size: 90px;
+    font-weight: 800;
+  }
+
+  h2 {
+    text-transform: capitalize;
+    line-height: 50px;
+    color: $SecenderyColor;
+  }
+
+  a {
+    display: inline-block;
+    margin-top: 20px;
+    background: $PrimaryColor;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    padding: 0 40px;
+    border-radius: 5px;
+    color: $ColorWhite;
+    transition: .3s;
+
+    &:hover {
+      background-color: $SecenderyColor;
+      transition: .3s;
+    }
+  }
+}
+
+
+// ============== Error CSS End ============== //
