@@ -1,8 +1,10 @@
 const Products = () => {
     return (
-        <div className='mt-170'>
-            this is products
-        </div>
+        <section className='mt-170'>
+            {/* banner */}
+            <h3>Hello Product page</h3>
+            {/* product content + right sidebar widget */}
+        </section>
     );
 };
 
