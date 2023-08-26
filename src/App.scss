@@ -1,10 +1,16 @@
 // ============== Color Start ============== //
+// commonColor
 $PrimaryColor:#ff5757;
 $SecenderyColor:#3d444e;
 $ColorWhite:#fff;
 $ColorBlack:#000;
+// textColor
 $ColorText1:#a3a3a3;
+// bgColor
 $ColorBg1:#e6ecf2;
+$ColorBg2:#111926;
+$ColorBg3:#222836;
+// borderColor
 $ColorBorder1:rgb(245, 245, 245);
 // ============== Color End ============== //
 
@@ -30,13 +36,13 @@ h4,
 h5,
 h6,
 p {
-  margin: 0;
-  padding: 0;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
 ul {
-  margin: 0;
-  padding: 0;
+  margin: 0 !important;
+  padding: 0 !important;
 
   li {
     list-style: none;
@@ -146,3 +152,44 @@ textarea::placeholder {
 }
 
 // ============== Header CSS End ============== //
+
+// ============== Footer CSS Start ============== //
+.footer-top {
+  background-color: $ColorBg2;
+  color: $ColorWhite;
+
+  .footer-title {
+    margin-bottom: 25px;
+
+    h4 {
+      font-size: 18px;
+      font-weight: 600;
+    }
+  }
+
+
+  .footer-widget {
+    p {
+      line-height: 27px;
+      text-transform: capitalize;
+      font-size: 14px;
+    }
+
+    ul li a {
+      margin-bottom: 7px;
+      color: $ColorWhite;
+      display: block;
+      font-size: 14px;
+    }
+  }
+
+}
+
+.footer-bottom {
+  background-color: $ColorBg3;
+  text-align: center;
+  color: $ColorText1;
+  font-size: 14px;
+}
+
+// ============== Footer CSS End ============== //
