@@ -1,0 +1,144 @@
+// ============== Color Start ============== //
+$PrimaryColor:#ff5757;
+$SecenderyColor:#3d444e;
+$ColorWhite:#fff;
+$ColorBlack:#000;
+$ColorText1:#a3a3a3;
+$ColorBg1:#e6ecf2;
+$ColorBorder1:rgb(245, 245, 245);
+// ============== Color End ============== //
+
+// ============== Basic CSS Start ============== //
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif !important;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+
+  li {
+    list-style: none;
+  }
+}
+
+input::placeholder,
+textarea::placeholder {
+  opacity: 1;
+  color: $ColorText1 !important;
+}
+
+.section-border-bottom {
+  border-bottom: 1px solid $ColorBorder1 !important;
+}
+
+// ============== Basic CSS End ============== //
+
+
+// ============== Header CSS Start ============== //
+
+.header-wrap {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+
+  .nav-search {
+    position: relative;
+
+    button {
+      position: absolute;
+      top: 0;
+      right: 0px;
+      border: 0;
+      height: 45px;
+      width: 70px;
+      font-size: 22px;
+      color: $ColorWhite;
+      background: $PrimaryColor;
+      border-radius: 0 5px 5px 0;
+    }
+
+    input {
+      border: 0;
+      height: 45px;
+      width: 500px;
+      background: $ColorBg1;
+      padding: 20px;
+
+      &:focus {
+        box-shadow: none !important;
+        background: $ColorBg1;
+      }
+    }
+
+
+  }
+}
+
+
+.header-search {
+  width: 100%;
+}
+
+.nav-end i {
+  font-size: 22px;
+  color: $SecenderyColor;
+}
+
+.nav-link span {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: $SecenderyColor;
+}
+
+.header-nav {
+  padding: 0;
+
+  li {
+    list-style: none;
+    float: left;
+    margin-right: 30px;
+
+    a {
+      text-decoration: none;
+      color: $SecenderyColor;
+      display: flex;
+      align-items: center;
+      transition: .3s;
+      font-weight: 600;
+    }
+
+    :hover {
+      transition: .3s;
+      color: $PrimaryColor;
+    }
+
+    i {
+      margin-right: 5px;
+      font-size: 22px;
+      font-weight: normal;
+    }
+  }
+}
+
+// ============== Header CSS End ============== //
