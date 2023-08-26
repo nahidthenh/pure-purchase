@@ -4,9 +4,9 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
     return (
-        <header className="header-wrap">
+        <header className="header-wrap fixed-top bg-white">
             <div className="header-top py-2 section-border-bottom">
-                <Navbar collapseOnSelect expand="lg">
+                <Navbar collapseOnSelect expand="lg" >
                     <Container>
                         <Navbar.Brand className="me-5" href="/">
                             <img width={50} src={logo} alt="" />
