@@ -34,13 +34,18 @@ const Products = () => {
                     </Col>
                     <Col md={9}>
                         <div className="products-wrap">
-                            {
-                                productsData.map(data => <Product
-                                    key={data.id}
-                                    data={data}
-                                >
-                                </Product>)
-                            }
+                            <Row>
+                                {
+                                    productsData.map(data =>
+                                        <Col key={data.id} xl={6} lg={6} >
+                                            <Product
+                                                data={data}
+                                            >
+                                            </Product>
+                                        </Col>
+                                    )
+                                }
+                            </Row>
                         </div>
                     </Col>
                 </Row>
