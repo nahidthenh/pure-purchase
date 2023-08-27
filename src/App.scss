@@ -233,3 +233,23 @@ textarea::placeholder {
 
 
 // ============== Error CSS End ============== //
+
+// ============== Slider CSS Start ============== //
+.slider-item {
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.slider-item img {
+  border-radius: 10px;
+}
+
+.swiper-pagination.swiper-pagination-bullets.swiper-pagination-horizontal {
+  bottom: 0px;
+}
+
+.swiper-pagination-bullet-active {
+  background: var(--swiper-pagination-color, $PrimaryColor) !important;
+}
+
+// ============== Slider CSS End ============== //
