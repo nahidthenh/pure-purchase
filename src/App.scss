@@ -12,6 +12,8 @@ $ColorBg2:#111926;
 $ColorBg3:#222836;
 // borderColor
 $ColorBorder1:rgb(245, 245, 245);
+// Border Radius 
+$BorderRadiusPrimary: 5px;
 // ============== Color End ============== //
 
 // ============== Basic CSS Start ============== //
@@ -220,7 +222,7 @@ textarea::placeholder {
     line-height: 60px;
     text-align: center;
     padding: 0 40px;
-    border-radius: 5px;
+    border-radius: $BorderRadiusPrimary;
     color: $ColorWhite;
     transition: .3s;
 
@@ -237,11 +239,11 @@ textarea::placeholder {
 // ============== Slider CSS Start ============== //
 .slider-item {
   margin-bottom: 20px;
-  border-radius: 10px;
+  border-radius: $BorderRadiusPrimary;
 }
 
 .slider-item img {
-  border-radius: 10px;
+  border-radius: $BorderRadiusPrimary;
 }
 
 .swiper-pagination.swiper-pagination-bullets.swiper-pagination-horizontal {
