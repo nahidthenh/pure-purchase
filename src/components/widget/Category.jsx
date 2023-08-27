@@ -1,13 +1,13 @@
-import axios from "axios";
 import { useEffect, useState } from "react";
 import { Form } from "react-bootstrap";
+import axios from './../../utils/axios';
 
 const Category = () => {
 
     const [categoryData, setCategoryData] = useState([])
 
     useEffect(() => {
-        axios.get('https://dummyjson.com/products/categories')
+        axios.get('products/categories')
             .then(res => {
                 setCategoryData(res.data);
             })

@@ -1,6 +1,6 @@
-import axios from "axios";
 import { useEffect, useState } from "react";
 import { Form } from "react-bootstrap";
+import axios from './../../utils/axios';
 
 
 const Brands = () => {
@@ -8,7 +8,7 @@ const Brands = () => {
     const [brandData, setBrandData] = useState([])
 
     useEffect(() => {
-        axios.get('https://dummyjson.com/products')
+        axios.get('products')
             .then(res => {
                 setBrandData(res.data.products);
             })

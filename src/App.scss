@@ -261,9 +261,15 @@ textarea::placeholder {
 .left-sidebar {
   padding: 15px;
   background: $ColorBg4;
-  border-radius: 5px;
+  border-radius: $BorderRadiusPrimary;
   position: sticky;
   top: 170px;
+}
+
+.products-wrap {
+  padding: 15px;
+  background: $ColorBg4;
+  border-radius: $BorderRadiusPrimary;
 }
 
 // ============== Layout CSS End ============== //
@@ -296,7 +302,7 @@ textarea::placeholder {
 
 .form-check input:focus {
   box-shadow: none !important;
-  border-color: $PrimaryColor;
+  border-color: #DEE2E6;
 }
 
 .form-check-input:checked {
