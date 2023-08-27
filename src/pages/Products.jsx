@@ -20,7 +20,9 @@ const Products = () => {
                         </div>
                     </Col>
                     <Col md={9}>
-                        <div className="p-3 bg-danger"></div>
+                        <div className="p-3 bg-danger">
+                           
+                        </div>
                     </Col>
                 </Row>
             </Container>

@@ -11,13 +11,8 @@ const Category = () => {
             .then(res => {
                 setCategoryData(res.data);
             })
-            .catch(function (error) {
-                // handle error
-                console.log(error);
-            })
     }, [])
 
-    // console.log('Category', categoryData);
 
     return (
         <div className="category-wrap">

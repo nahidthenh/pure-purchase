@@ -255,3 +255,53 @@ textarea::placeholder {
 }
 
 // ============== Slider CSS End ============== //
+
+// ============== Layout CSS Start ============== //
+.left-sidebar {
+  padding: 15px;
+  background: #FAFAFA;
+  border-radius: 5px;
+  position: sticky;
+  top: 170px;
+}
+
+// ============== Layout CSS End ============== //
+
+// ============== Widget CSS Start ============== //
+
+.category-wrap h4 {
+  font-size: 18px;
+  margin-bottom: 15px !important;
+  display: blockblock;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.form-check {
+  margin-bottom: 10px !important;
+  text-transform: capitalize;
+  display: flex;
+  align-items: center;
+}
+
+.form-check label {
+  cursor: pointer;
+}
+
+.form-check input {
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+}
+
+.form-check input:focus {
+  box-shadow: none !important;
+  border-color: $PrimaryColor;
+}
+
+.form-check-input:checked {
+  background-color: $PrimaryColor !important;
+  border-color: $PrimaryColor !important;
+}
+
+// ============== Widget CSS End ============== //
