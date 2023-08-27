@@ -10,6 +10,7 @@ $ColorText1:#a3a3a3;
 $ColorBg1:#e6ecf2;
 $ColorBg2:#111926;
 $ColorBg3:#222836;
+$ColorBg4:#FAFAFA;
 // borderColor
 $ColorBorder1:rgb(245, 245, 245);
 // Border Radius 
@@ -259,7 +260,7 @@ textarea::placeholder {
 // ============== Layout CSS Start ============== //
 .left-sidebar {
   padding: 15px;
-  background: #FAFAFA;
+  background: $ColorBg4;
   border-radius: 5px;
   position: sticky;
   top: 170px;
@@ -272,7 +273,6 @@ textarea::placeholder {
 .category-wrap h4 {
   font-size: 18px;
   margin-bottom: 15px !important;
-  display: blockblock;
   font-weight: 600;
   text-transform: capitalize;
 }
