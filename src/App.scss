@@ -319,8 +319,12 @@ textarea::placeholder {
         background: $PrimaryColor;
         color: $ColorWhite;
 
+        &:first-child {
+          background-color: #3876DF;
+        }
+
         &:last-child {
-          background-color: green;
+          background-color: #06d6a0;
         }
       }
     }
