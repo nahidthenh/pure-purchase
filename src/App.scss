@@ -271,8 +271,6 @@ textarea::placeholder {
 }
 
 .products-wrap {
-  padding: 15px;
-  // background: $ColorBg4;
   border-radius: $BorderRadiusPrimary;
 
   .product-single-item {
@@ -320,7 +318,7 @@ textarea::placeholder {
         color: $ColorWhite;
 
         &:first-child {
-          background-color: #3876DF;
+          background-color: #3876DF !important;
         }
 
         &:last-child {
@@ -355,6 +353,7 @@ textarea::placeholder {
   .product-single-item h3 {
     font-size: 18px;
     margin-bottom: 10px !important;
+    color: $ColorBlack;
   }
 
   .item-price {
