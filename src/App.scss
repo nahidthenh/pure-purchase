@@ -11,6 +11,7 @@ $ColorBg1:#e6ecf2;
 $ColorBg2:#111926;
 $ColorBg3:#222836;
 $ColorBg4:#FAFAFA;
+$ColorBg5:#F3F6F9;
 // borderColor
 $ColorBorder1:rgb(245, 245, 245);
 // Border Radius 
@@ -268,8 +269,28 @@ textarea::placeholder {
 
 .products-wrap {
   padding: 15px;
-  background: $ColorBg4;
+  // background: $ColorBg4;
   border-radius: $BorderRadiusPrimary;
+}
+
+.product-single-item {
+  border: 1px solid #e9ebce;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.product-image {
+  height: 150px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  border-radius: 5px 5px 0 0;
+  margin-bottom: 10px;
+}
+
+.product-single-item h3 {
+  font-size: 18px;
+  margin-bottom: 10px !important;
 }
 
 // ============== Layout CSS End ============== //

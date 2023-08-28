@@ -37,11 +37,10 @@ const Products = () => {
                             <Row>
                                 {
                                     productsData.map(data =>
-                                        <Col key={data.id} xl={6} lg={6} >
+                                        <Col key={data.id} xl={4} lg={6} >
                                             <Product
                                                 data={data}
-                                            >
-                                            </Product>
+                                            />
                                         </Col>
                                     )
                                 }
