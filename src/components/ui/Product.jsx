@@ -14,7 +14,9 @@ const Product = (props) => {
     };
     return (
         <div className="product-single-item">
-            <div className="product-image" style={backgroundImageStyle}></div>
+            <div className="product-image" style={backgroundImageStyle}>
+                <button><i className="ri-shopping-cart-line me-2"></i> add to cart</button>
+            </div>
             <div className="p-3">
                 <h3>{truncateTitle(title, 2)}</h3>
                 <div className="item-details-content d-flex justify-content-between align-items-center">

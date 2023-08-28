@@ -280,8 +280,9 @@ textarea::placeholder {
     border-radius: 5px;
     margin-bottom: 20px;
 
-    &:hover {
-      background-color: red !important;
+    &:hover .product-image button {
+      opacity: 1;
+      transition: .3s;
     }
   }
 
@@ -291,8 +292,30 @@ textarea::placeholder {
     background-size: cover;
     background-position: center;
     border-radius: 5px 5px 0 0;
-  }
+    position: relative;
 
+    button {
+      position: absolute;
+      bottom: 0px;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: flex;
+      align-items: center;
+      border: 0;
+      background: $PrimaryColor;
+      height: 30px;
+      padding: 0 11px;
+      width: 80%;
+      text-align: center !important;
+      justify-content: center;
+      border-radius: 5px;
+      transition: .3s;
+      color: $ColorWhite;
+      font-size: 15px;
+      opacity: 0;
+    }
+
+  }
 
   .product-single-item h3 {
     font-size: 18px;
