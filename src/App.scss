@@ -284,6 +284,11 @@ textarea::placeholder {
       opacity: 1;
       transition: .3s;
     }
+
+    &:hover .product-option {
+      opacity: 1;
+      transition: .4s;
+    }
   }
 
   .product-image {
@@ -294,7 +299,33 @@ textarea::placeholder {
     border-radius: 5px 5px 0 0;
     position: relative;
 
-    button {
+    .product-option {
+      display: flex;
+      justify-content: end;
+      flex-direction: column;
+      float: right;
+      margin-right: 10px;
+      margin-top: 10px;
+      opacity: 0;
+      transition: .4s;
+
+      button {
+        margin-bottom: 10px;
+        border: 0;
+        border-radius: 5px;
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+        background: $PrimaryColor;
+        color: $ColorWhite;
+
+        &:last-child {
+          background-color: green;
+        }
+      }
+    }
+
+    .addtocart-btn {
       position: absolute;
       bottom: 0px;
       left: 50%;
