@@ -4,14 +4,22 @@ const Product = (props) => {
     const backgroundImageStyle = {
         backgroundImage: `url(${thumbnail})`,
     };
+    // Function to truncate the title to a specific word count
+    const truncateTitle = (text, limit) => {
+        const words = text.split(' ');
+        if (words.length > limit) {
+            return words.slice(0, limit).join(' ') + '...';
+        }
+        return text;
+    };
     return (
         <div className="product-single-item">
             <div className="product-image" style={backgroundImageStyle}></div>
             <div className="p-3">
-                <h3>{title}</h3>
-                <div className="d-flex justify-content-between align-items-center">
-                    <p>${Math.round(price - (price * (discountPercentage / 100)))} <del>${price}</del></p>
-                    <p><i className="ri-star-half-line"></i>{rating}</p>
+                <h3>{truncateTitle(title, 2)}</h3>
+                <div className="item-details-content d-flex justify-content-between align-items-center">
+                    <p className="item-price">${Math.round(price - (price * (discountPercentage / 100)))} <del>${price}</del></p>
+                    <p className="item-review-count">{rating}<i className="ri-star-half-line"></i></p>
                 </div>
             </div>
         </div>

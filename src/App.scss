@@ -6,6 +6,8 @@ $ColorWhite:#fff;
 $ColorBlack:#000;
 // textColor
 $ColorText1:#a3a3a3;
+$ColorText2:#878A99;
+$ColorText3:#0C192C;
 // bgColor
 $ColorBg1:#e6ecf2;
 $ColorBg2:#111926;
@@ -14,6 +16,7 @@ $ColorBg4:#FAFAFA;
 $ColorBg5:#F3F6F9;
 // borderColor
 $ColorBorder1:rgb(245, 245, 245);
+$ColorBorder2:#e9ebce;
 // Border Radius 
 $BorderRadiusPrimary: 5px;
 // ============== Color End ============== //
@@ -271,27 +274,62 @@ textarea::placeholder {
   padding: 15px;
   // background: $ColorBg4;
   border-radius: $BorderRadiusPrimary;
+
+  .product-single-item {
+    border: 1px solid $ColorBorder2;
+    border-radius: 5px;
+    margin-bottom: 20px;
+
+    &:hover {
+      background-color: red !important;
+    }
+  }
+
+  .product-image {
+    height: 150px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px 5px 0 0;
+  }
+
+
+  .product-single-item h3 {
+    font-size: 18px;
+    margin-bottom: 10px !important;
+  }
+
+  .item-price {
+    font-weight: 600;
+  }
+
+  .item-details-content {
+    p {
+      del {
+        font-size: 12px;
+        font-weight: 500;
+        color: $ColorText2;
+      }
+    }
+
+    .item-review-count {
+      font-size: 12px;
+      font-weight: 500;
+      color: $ColorText3;
+      display: flex;
+      align-items: center;
+
+      i {
+        margin-left: 5px;
+        color: gold;
+      }
+    }
+  }
+
 }
 
-.product-single-item {
-  border: 1px solid #e9ebce;
-  border-radius: 5px;
-  margin-bottom: 20px;
-}
 
-.product-image {
-  height: 150px;
-  width: 100%;
-  background-size: cover;
-  background-position: center;
-  border-radius: 5px 5px 0 0;
-  margin-bottom: 10px;
-}
 
-.product-single-item h3 {
-  font-size: 18px;
-  margin-bottom: 10px !important;
-}
 
 // ============== Layout CSS End ============== //
 
