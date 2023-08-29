@@ -7,7 +7,7 @@ import axios from '../utils/axios';
 const Products = () => {
 
     const [productsData, setProductsData] = useState([])
-
+    
     useEffect(() => {
         axios.get('products')
             .then(res => {

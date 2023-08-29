@@ -9,7 +9,7 @@ const ProductDetails = () => {
     const [productData, setProductData] = useState([])
 
     useEffect(() => {
-        axios.get(`/product/${currentProductId.id}`)
+        axios.get(`/products/${currentProductId.id}`)
             .then(res => {
                 setProductData(res.data);
             })
