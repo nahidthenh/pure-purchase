@@ -385,6 +385,19 @@ textarea::placeholder {
 
 }
 
+.filter-header {
+  background: $ColorBg4;
+  border-radius: $BorderRadiusPrimary;
+  padding: 15px;
+  margin-bottom: 20px;
+
+  p {
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: capitalize;
+  }
+}
+
 // ============== Layout CSS End ============== //
 
 // ============== Category CSS Start ============== //

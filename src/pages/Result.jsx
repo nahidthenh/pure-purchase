@@ -17,8 +17,6 @@ const Result = () => {
             })
     })
 
-    console.log(resultData);
-
     return (
         <div className='mt-170'>
             <Container>
@@ -29,6 +27,9 @@ const Result = () => {
                         </div>
                     </Col>
                     <Col md={9}>
+                        <div className="filter-header">
+                            <p>Showing {resultData.length} results for {resultData.category} </p>
+                        </div>
                         <div className="products-wrap">
                             <Row>
                                 {
