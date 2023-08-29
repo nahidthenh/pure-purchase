@@ -385,10 +385,42 @@ textarea::placeholder {
 
 }
 
-
-
-
 // ============== Layout CSS End ============== //
+
+// ============== Category CSS Start ============== //
+.page-title {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 25px !important;
+}
+
+.category-item {
+  display: flex;
+  flex-wrap: wrap;
+
+  a {
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 10px 15px;
+    border: 1px solid $ColorBorder2;
+    color: $ColorText3;
+    font-weight: 500;
+    border-radius: 5px;
+    font-size: 16px;
+    text-transform: capitalize;
+    transition: .3s;
+
+    &:hover {
+      background-color: $PrimaryColor;
+      color: $ColorWhite;
+      transition: .3s;
+      border-color: $PrimaryColor !important;
+    }
+  }
+
+}
+
+// ============== Category CSS End ============== //
 
 // ============== Widget CSS Start ============== //
 
