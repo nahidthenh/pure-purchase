@@ -3,6 +3,7 @@ import Main from "../layout/Main";
 import { Home, Products, Category } from '../pages/index'
 import Error from "../components/others/Error";
 import ProductDetails from "../pages/ProductDetails";
+import Result from "../pages/Result";
 
 export const router = createBrowserRouter([
     {
@@ -24,6 +25,10 @@ export const router = createBrowserRouter([
             {
                 path: '/product-details/:id',
                 element: <ProductDetails></ProductDetails>
+            },
+            {
+                path: '/result/:id',
+                element: <Result></Result>
             }
         ]
     },

@@ -24,7 +24,7 @@ const Category = () => {
                                 categoryData.map(
                                     data => <Link
                                         key={data}
-                                        to={`/${data}`}
+                                        to={`/result/${data}`}
                                         data={data}
                                     >{data}</Link>
                                 )
