@@ -398,6 +398,15 @@ textarea::placeholder {
   }
 }
 
+.form-check-label {
+  font-size: 15px;
+  text-transform: uppercase !important;
+}
+
+.form-check-label.text-lowercase {
+  text-transform: uppercase !important;
+}
+
 // ============== Layout CSS End ============== //
 
 // ============== Category CSS Start ============== //
