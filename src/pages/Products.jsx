@@ -4,10 +4,11 @@ import Category from '../components/widget/Category';
 import Product from '../components/ui/Product';
 import { useEffect, useState } from 'react';
 import axios from '../utils/axios';
+import Discount from '../components/widget/Discount';
 const Products = () => {
 
     const [productsData, setProductsData] = useState([])
-    
+
     useEffect(() => {
         axios.get('products')
             .then(res => {
@@ -29,6 +30,7 @@ const Products = () => {
                 <Row className='my-3'>
                     <Col md={3}>
                         <div className="left-sidebar">
+                            <Discount></Discount>
                             <Category></Category>
                         </div>
                     </Col>
